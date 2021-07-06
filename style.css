@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "나눔고딕", "맑은 고딕", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    text-align: center;
+    background: #f9ca24;
+    width: 100%;
+    color: #fff;
+    padding-top: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav > ul > li {
+    float: left;
+    outline: 1px solid; 
+    width: 33.333%;
+}
+nav > ul > li > a {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* 현재 메뉴(페이지) */
+nav > ul > li.active > a {
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 4px solid #fff;
+}
+
+header > h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#pet {
+    padding: 10px;
+    text-align: center;
+}
+
+#pet > h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.pet-list {
+    overflow: hidden;
+}
+ 
+.pet-list > li {
+    width: 50%;
+    float: left; 
+    padding: 0 5px;  
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.pet-list > li > a > img {
+    width: 100%;
+    display: block;
+}
+
+.pet-list > li > a > .caption {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: absolute;
+    width: calc(100% - 10px);
+    padding: 1em;
+    left: 5px;
+    bottom: 0;
+}
+
+li > .caption {
+    color: #fff;
+}
